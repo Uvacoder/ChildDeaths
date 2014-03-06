@@ -10,40 +10,58 @@
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 	</head>
 	<body>
-		<!-- Nav tabs -->
-		<ul class="nav nav-tabs">
-		  <li class="active"><a href="#unreviewed-tab" data-toggle="tab">Unreviewed cases</a></li>
-		  <li><a href="#length-tab" data-toggle="tab">Length of review</a></li>
-		  <li><a href="#recs-tab" data-toggle="tab">No recommendations</a></li>
-		  <li><a href="#investigation-tab" data-toggle="tab">Further investigation</a></li>
-		</ul>
+		<div class="container-fluid">
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#unreviewed-tab" data-toggle="tab">Unreviewed cases</a></li>
+				<li><a href="#length-tab" data-toggle="tab">Length of review</a></li>
+				<li><a href="#recs-tab" data-toggle="tab">No recommendations</a></li>
+				<li><a href="#investigation-tab" data-toggle="tab">Further investigation</a></li>
+			</ul>
 
-		<!-- Tab panes -->
-		<div class="tab-content">
-		  <div class="tab-pane active" id="unreviewed-tab">
-				<div class="tab-headline">Unreviewed cases</div>
-				<div class="big-stat">Deaths reported in 2012: 940<br>Deaths reviewed in 2012: 464 <br>Percentage reviewed: 49 percent</div>
-				<div class="issue-detail">State law requires county child fatality review committees to examine any death of a child under age 18 if the death is “sudden, unexpected, unexplained, suspicious or attributed to unusual circumstances.” The statewide Child Fatality Review Panel says it expects county committees to report on every child’s death.</div>
-				<div class="eg-report"></div>
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-pane active" id="unreviewed-tab">
+					<div class="page-header"><h3 class="tab-headline">Unreviewed cases</h3></div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="big-stat">Deaths reported in 2012: <span class="label label-default">940</span> | Deaths reviewed in 2012: <span class="label label-default">464</span> | Percentage reviewed: <span class="label label-default">49 percent</span></div>
+						</div>
+					</div>
+					<div class="issue-detail">State law requires county child fatality review committees to examine any death of a child under age 18 if the death is “sudden, unexpected, unexplained, suspicious or attributed to unusual circumstances.” The statewide Child Fatality Review Panel says it expects county committees to report on every child’s death.</div>
+					<div class="eg-report"></div>
+				</div>
+				<div class="tab-pane" id="length-tab">
+					<div class="page-header"><h3 class="tab-headline">Length of review</h3></div>
+					<div class="panel panel-default">
+					  <div class="panel-body">
+					    <div class="big-stat">Reviews completed within three months: <span class="label label-default">48 (20 percent)</span> | Average length of review: <span class="label label-default">8.5 months</span><br> <span class="label label-default">62 cases (26 percent)</span> took longer to review than the child lived.</div>
+					  </div>
+					</div>
+					<div class="issue-detail">County review committees must report on a child’s death within three months. Each child’s date of death was redacted from reports released to The Atlanta Journal-Constitution. But the newspaper was able to establish timelines for 240 cases.</div>
+					<div class="eg-report"></div>
+			  </div>
+			  <div class="tab-pane" id="recs-tab">
+					<div class="page-header"><h3 class="tab-headline">No recommendations</h3></div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="big-stat">Committees issued no recommendations in <span class="label label-default">334 of 464</span> cases reviewed by the Journal-Constitution <span class="label label-default">(72 percent)</span></div>
+						</div>
+					</div>
+					<div class="issue-detail">When reviewing deaths that could have been prevented, county review committees are supposed to recommend measures to protect other children in similar circumstances.</div>
+					<div class="eg-report"></div>
+				</div>
+				<div class="tab-pane" id="investigation-tab">
+					<div class="page-header"><h3 class="tab-headline">Further investigation</h3></div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="big-stat">Cases referred for additional investigation: <span class="label label-default">2</span> | Cases in which official findings challenged: <span class="label label-default">2</span> | Reviews examining DFCS actions: <span class="label label-default">0</span></div>
+						</div>
+					</div>
+					<div class="issue-detail">County review committees are made up of prosecutors, police, judges, social workers, educators, coroners and other officials. They have the authority to request additional investigation of a child’s death or to challenge the findings of other investigations. They also can report on failings by the state’s child-protection agency or other government entities.</div>
+					<div class="eg-report"></div>
+				</div>
 			</div>
-		  <div class="tab-pane" id="length-tab">
-				<div class="tab-headline">Length of review</div>
-				<div class="big-stat">Reviews completed within three months: 48 (20 percent)<br>Average length of review: 8.5 months<br> Note: 62 cases (26 percent) took longer to review than the child lived.</div>
-				<div class="issue-detail">County review committees must report on a child’s death within three months. Each child’s date of death was redacted from reports released to The Atlanta Journal-Constitution. But the newspaper was able to establish timelines for 240 cases.</div>
-				<div class="eg-report"></div>
-		  </div>
-		  <div class="tab-pane" id="recs-tab">
-				<div class="tab-headline">No recommendations</div>
-				<div class="big-stat">Committees issued no recommendations in 334 of 464 cases reviewed by the Journal-Constitution (72 percent)</div>
-				<div class="issue-detail">When reviewing deaths that could have been prevented, county review committees are supposed to recommend measures to protect other children in similar circumstances.</div>
-				<div class="eg-report"></div>
-		  </div>
-		  <div class="tab-pane" id="investigation-tab">
-				<div class="tab-headline">Further investigation</div>
-				<div class="big-stat">Cases referred for additional investigation: 2<br>Cases in which official findings challenged: 2<br>Reviews examining DFCS actions: 0</div>
-				<div class="issue-detail">County review committees are made up of prosecutors, police, judges, social workers, educators, coroners and other officials. They have the authority to request additional investigation of a child’s death or to challenge the findings of other investigations. They also can report on failings by the state’s child-protection agency or other government entities.</div>
-				<div class="eg-report"></div>
-		  </div>
 		</div>
 
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
