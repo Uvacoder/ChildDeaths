@@ -10,6 +10,9 @@
 .big-stat {
 	font-size: 1.1em;
 }
-/*.issue-detail {
-	margin-top: 15px;
-}*/
+.panel {
+	padding: 0;
+}
+.media {
+	margin-top: 0;
+}
