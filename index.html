@@ -23,21 +23,24 @@
 			<div class="tab-content">
 				<div class="tab-pane active" id="unreviewed-tab">
 					<div class="page-header"><h3 class="tab-headline">Unreviewed cases</h3></div>
-					<div class="row">
-						<div class="issue-detail col-sm-6">State law requires county child fatality review committees to examine any death of a child under age 18 if the death is “sudden, unexpected, unexplained, suspicious or attributed to unusual circumstances.” The statewide Child Fatality Review Panel says it expects county committees to report on every child’s death.</div>
-						<div class="col-sm-6" style="padding:0;">
-							<div class="panel panel-default">
-								<div class="panel-body">
-									<div class="big-stat">- Deaths reported in 2012: <span class="label label-primary">940</span><br>- Deaths reviewed in 2012: <span class="label label-primary">464</span><br>- Percentage reviewed: <span class="label label-primary">49%</span></div>
-								</div>
-							</div><!-- /.panel -->
-							<div class="well well-sm col-sm-9" data-toggle="modal" data-target="#unreviewed-modal">
-									<h4 class="media-heading">Case study</h4>
-									Click for more
+					<div class="col-sm-6">
+						<div class="issue-detail">State law requires county child fatality review committees to examine any death of a child under age 18 if the death is “sudden, unexpected, unexplained, suspicious or attributed to unusual circumstances.” The statewide Child Fatality Review Panel says it expects county committees to report on every child’s death.</div>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="big-stat">- Deaths reported in 2012: <span class="label label-primary">940</span><br>- Deaths reviewed in 2012: <span class="label label-primary">464</span><br>- Percentage reviewed: <span class="label label-primary">49%</span></div>
 							</div>
-						</div>
-						<div class="eg-report"></div>
-					</div>
+						</div><!-- /.panel -->
+					</div><!-- /.col -->
+					<!--unreviewed case study -->
+					<div class="col-sm-6 eg-report">
+						<h4>Case study</h4>
+						<p><strong>County:</strong> Butts<br>
+						<strong>Child’s age:</strong> 1<br>
+						<strong>Date of death:</strong> May 14, 2012<br>
+						<strong>Cause of death:</strong> Cardiac arrest while sleeping with his father.</p>
+						<p><strong>Details:</strong> A month earlier, the Division of Family and Children Services had received a report that the boy had been physically abused. But it said the person allegedly responsible “was unable to be interviewed.” On the day the child died, according to a DFCS report, “little documentation” existed in his case file; by the next day, a caseworker had entered reports and photographs – obviously after the fact. An autopsy raised questions about possible abuse, noting the child had swelling in his brain and several contusions. But the medical examiner couldn’t definitively say whether the child died because of physical trauma or because of a medical condition.</p>
+						<p><strong>Outcome:</strong> Not reviewed.</p>
+					</div><!-- /.col unreviewed case study -->
 				</div><!-- /unreviewed tab -->
 				<div class="tab-pane" id="delayed-tab">
 					<div class="page-header"><h3 class="tab-headline">Delayed review</h3></div>
@@ -88,29 +91,7 @@
 				</div><!-- /investigations tab -->
 			</div><!-- /tab content -->
 		</div><!-- /main container -->
-		<div id="unreviewed-modal" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title">Case study: Unreviewed cases</h4>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<p><strong>County:</strong> Butts<br>
-							<strong>Child’s age:</strong> 1<br>
-							<strong>Date of death:</strong> May 14, 2012<br>
-							<strong>Cause of death:</strong> Cardiac arrest while sleeping with his father.</p>
-							<p><strong>Details:</strong> A month earlier, the Division of Family and Children Services had received a report that the boy had been physically abused. But it said the person allegedly responsible “was unable to be interviewed.” On the day the child died, according to a DFCS report, “little documentation” existed in his case file; by the next day, a caseworker had entered reports and photographs – obviously after the fact. An autopsy raised questions about possible abuse, noting the child had swelling in his brain and several contusions. But the medical examiner couldn’t definitively say whether the child died because of physical trauma or because of a medical condition.</p>
-							<p><strong>Outcome:</strong> Not reviewed.</p>
-						</div><!-- /row -->
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /#unreviewed-modal -->
+		
 		<div id="delayed-modal" class="modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content">
