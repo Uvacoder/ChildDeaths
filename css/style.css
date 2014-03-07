@@ -13,3 +13,13 @@
 .media {
 	margin-top: 0;
 }
+/*modal styles*/
+.modal-body h3 {
+	margin: 0;
+}
+.modal-body .caption {
+	margin-top: 14px;
+}
+.img-thumbnail {
+	margin-right: 10px;
+}
