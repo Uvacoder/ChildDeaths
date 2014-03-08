@@ -14,8 +14,24 @@
 	</head>
 	<body>
 		<div id="tab_area"></div>
-		<div id="unreviewed_table"></div>		
-		<div id="CFR_table"></div>
+		<div id="table_area">
+			<div class="container-fluid">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#unreviewed_tab" data-toggle="tab">Unreviewed cases</a></li>
+					<li><a href="#reviewed_tab" data-toggle="tab">Reviewed cases</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="unreviewed_tab">
+						<div id="unreviewed_table"></div>
+					</div>
+					<div class="tab-pane" id="reviewed_tab">
+						<div id="CFR_table"></div>
+					</div>
+				</div><!-- /tab content -->
+			</div><!-- /main container -->
+		</div>
 		<div id="modal"></div>
 
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
