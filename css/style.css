@@ -4,6 +4,9 @@
 /*#tab_container {
 	max-width: 800px;
 }*/
+.tab-pane .col-sm-6{
+	padding-left: 0;
+}
 .big-stat {
 	font-size: 1.1em;
 }
@@ -22,4 +25,7 @@
 }
 .img-thumbnail {
 	margin-right: 10px;
+}
+#CFR_table .tablesorter-header-inner, #CFR_table td{
+	font-size: 12px;
 }
