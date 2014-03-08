@@ -1,29 +1,37 @@
 #! /usr/bin/env python
+#this script will convert csv to a json file formatted for tablesorter.js
+
 import csv
 import json
-from collections import OrderedDict as ordereddict
-#this file will convert csv to its json equivalent, but note that order will not be mantained
+
 # Open the CSV
 f = open( '../data/unreviewed cases - Sheet 1.csv', 'rU' )
 
-#reader = csv.DictReader( f, fieldnames = ( "school","fiscyear","tuitionfees","hopepays","studentowes","source","notes" )) #doing it this way will put row 1 into your data - exclude fieldnames to use row 1 as fieldnames
 reader = csv.reader( f, dialect='excel')
+
+#skip the header row since we're setting those up manually
 reader.next() 
 
+#column headers - you can customize each label by creating an object for it like this: { "text": "First Name", "class": "fname", "width": "20%" }
 headers = [
 	[
 		"Age", "County", "Date of death", "Cause of death", "Manner of death", "Previous DFCS case?"
 	]
 ]
+
+#set footer property to clone the headers
 footers = "clone"
+
+#push rows into an array
 rows = []
 for row in reader:
 	rows.append(row)
 
-# Parse the CSV into JSON
+#create object with key:value pairs
 tree = { "headers": headers, "footers": footers, "rows": rows }
-out = json.dumps(tree)
 
+#convert to json
+out = json.dumps(tree)
 print "JSON parsed!"
 
 # Save the JSON
