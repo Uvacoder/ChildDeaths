@@ -26,6 +26,10 @@
 .img-thumbnail {
 	margin-right: 10px;
 }
+/*table styles*/
 #CFR_table .tablesorter-header-inner, #CFR_table td{
 	font-size: 12px;
+}
+table tr td:nth-child(2), table th:nth-child(2), #CFR_table th:nth-child(8), #CFR_table td:nth-child(8), #CFR_table th:nth-child(9), #CFR_table td:nth-child(9){
+	display: none;
 }
