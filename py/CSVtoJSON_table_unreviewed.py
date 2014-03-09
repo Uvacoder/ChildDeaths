@@ -15,7 +15,7 @@ reader.next()
 #column headers - you can customize each label by creating an object for it like this: { "text": "First Name", "class": "fname", "width": "20%" }
 headers = [
 	[
-		"Age", "County", "Date of death", "Cause of death", "Manner of death", "Previous DFCS case?"
+		{ "text": "Age", "class": "age", "data-sorter": "false" }, { "text": "Date of death", "class": "death", "data-sorter": "false"}, "County", { "text": "Cause of death", "class": "cause", "data-sorter": "false"}, "Manner of death", { "text": "Previous DFCS case?", "class": "dfcs", "data-sorter": "false"}
 	]
 ]
 

@@ -15,7 +15,7 @@ reader.next()
 #column headers - you can customize each label by creating an object for it like this: { "text": "First Name", "class": "fname", "width": "20%" }
 headers = [
 	[
-		"Age", "Date of death", "County", "Months before review", "Details of death", "Recommendation by child fatality review committee", "Previous contact by family with government agency?", "Family history with DFCS?", "Review find abuse or neglect caused death?", "Review find abuse or neglect contributed to death?", "Death result in action by DFCS?", "If yes, were other children taken into protective custody?", "Were criminal charges filed?",  "Reasons committees cited for incomplete reviews"
+		{ "text": "Age", "class": "age", "data-sorter": "false" }, { "text": "Date of death", "class": "death", "data-sorter": "false" }, "County", "Months before review", { "text": "Details of death", "class": "cause", "data-sorter": "false" }, { "text": "Recommendation by child fatality review committee", "class": "recommendation", "data-sorter": "false" }, { "text":  "Family history with DFCS?", "class": "dfcs", "data-sorter": "false" }, { "text":  "Review find abuse or neglect caused death?", "class": "caused-death", "data-sorter": "false" }, { "text":  "Review find abuse or neglect contributed to death?", "class": "contributed", "data-sorter": "false" }, { "text":  "Death result in action by DFCS?", "class": "action", "data-sorter": "false" }, { "text":  "If yes, were other children taken into protective custody?", "class": "custody", "data-sorter": "false" }, { "text":  "Were criminal charges filed?", "class": "charges", "data-sorter": "false" },  { "text":  "Reasons committees cited for incomplete reviews", "class": "reasons", "data-sorter": "false" }
 	]
 ]
 
