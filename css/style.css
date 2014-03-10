@@ -32,4 +32,8 @@
 }
 table tr td:nth-child(2), table th:nth-child(2), #CFR_table th:nth-child(8), #CFR_table td:nth-child(8), #CFR_table th:nth-child(9), #CFR_table td:nth-child(9){
 	display: none;
+@media only screen and (max-width: 600px) {
+	#mkwell {
+		display: none;
+	}
 }
