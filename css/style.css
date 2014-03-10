@@ -32,6 +32,13 @@
 }
 table tr td:nth-child(2), table th:nth-child(2), #CFR_table th:nth-child(8), #CFR_table td:nth-child(8), #CFR_table th:nth-child(9), #CFR_table td:nth-child(9){
 	display: none;
+}
+@media only screen and (max-width: 767px) {
+	table { max-width: 100% !important; }
+	table tr td:nth-child(3), table th:nth-child(3), #unreviewed_table tr td:nth-child(6), #unreviewed_table table th:nth-child(6), #CFR_table th:nth-child(3), #CFR_table td:nth-child(3), #CFR_table th:nth-child(8), #CFR_table td:nth-child(8), #CFR_table th:nth-child(11), #CFR_table td:nth-child(11), #CFR_table th:nth-child(10), #CFR_table td:nth-child(10), #CFR_table th:nth-child(12), #CFR_table td:nth-child(12), #CFR_table th:nth-child(13), #CFR_table td:nth-child(13), #CFR_table th:nth-child(7), #CFR_table td:nth-child(7) {
+		display:none;
+	}
+}
 @media only screen and (max-width: 600px) {
 	#mkwell {
 		display: none;
